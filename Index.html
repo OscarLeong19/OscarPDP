@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Index</title>
+        <link rel="stylesheet" href="css/style.css">
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        
+    </head>
+	
+		<body>    
+		<header>
+			<nav>   
+			 <div class="menu">
+				<ul>
+					<li><a href="Index.html">Home</a></li>
+					<li><a href="#interest">Interest</a></li>
+					<li><a href="#education">Education</a></li>
+					<li><a href="#contact">Contact ME</a></li> 
+					<li><a href="Goal.html">My Goal</a></li>
+			   </ul>
+			 </div>
+			</nav>
+		</header>
+		
+        <div class="pimg1">
+            <div class="ptext">
+                <span class="border">
+                    Welcome to My Personal Portfolio   
+                </span>
+            </div>
+        </div>
+        
+       <section class="section section-light">
+            <h2>Hi everybody!</h2>
+            <p> My name is Leong Ho Yin, Oscar. </p>
+            <p> My student ID is 56235350. </p>
+            <p>I'm a year one student studing Information Technology for Business.</p>
+       </section>
+          
+        <div class="pimg2">
+		   <div id="interest"><a href="interest"></a></div>
+            <div class="ptext">
+                <span class="border trans">
+                    My Interest
+                </span>
+            </div>
+         </div>
+        
+        <section class="section section-dark">
+             <h2>My Interest</h2>
+             <p><em> My favorite interest is Rope Skipping. I'm also a rope skipping athlete in Hong Kong. I've played rope skipping for 8-9 years. In these 8-9 years, I've participated many competitions and shows which have given me lots of success and confidence. And I can make more friends during the skipping training, even the rope skippers from overseas. That's why I love rope skipping so much. </em></p>
+        </section>
+         
+        
+        <div class="pimg3">
+		  <div id="education"><a href="education"></a></div>
+            <div class="ptext">
+                <span class="border trans">
+                    Education
+              </span>
+            </div>
+        </div>
+        
+        <section class="section section-light">
+           <h2>Education</h2>
+           <p><em> In 2012-2019, I studied in Hong Kong and Kowloon Kaifong Women's Association Sun Fong Chung College.</em></p>
+           <table width="435" height="310" border="0" align="center">
+             <tbody>
+               <tr>
+                 <td>
+				   <div class="schoolpic1">
+					   <img src="img/sunfc.jpg" width="300" height="225">
+			       </div>
+				 </td>
+               </tr>
+             </tbody>
+           </table>
+           <p><em> For now, I am studying at School of Continuing and Professional Education (SCOPE) of City University of Hong Kong.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </em><br>
+           </p>
+           <table width="490" height="218" border="0" align="center">
+             <tbody>
+               <tr>
+                 <td>
+				   <div class="schoolpic2">
+					   <img src="img/scope.jpg">
+			       </div>
+				 </td>
+               </tr>
+             </tbody>
+           </table>
+           
+        </section>
+			
+
+        <div class="pimg4">
+		   <div id="contact"><a href="contact"></a>
+		   </div>
+               <div class="ptext">
+                <span class="border trans">
+                    Contact Me
+                </span>
+			   </div>
+         </div>
+
+        <section class="section section-dark">
+          	<h2>Contact</h2>
+			<p style="font-size: 18px">Come and visit my Facebook and Instagram</p>
+			<table width="464" border="0" align="center">
+			  <tbody>
+			    <tr>
+			      <td>
+					 <a href="https://www.facebook.com/profile.php?id=100001524658998">
+					 <img src="img/fb.jpg" width="220" height="220" alt=""/>
+					 </a>
+					<p>This is my facebook!</p>
+				  </td>
+			      <td>
+					 <a href="https://instagram.com/oscarleung_0619?igshid=1fpm69x47nj20">
+					  <img src="img/ig.jpg" width="200" height="200" alt=""/>
+					 </a>
+					<p>This is my Instagram!</p>
+				  </td>
+			    </tr>
+			  </tbody>
+		  </table>
+        </section>
+		
+        <div class="pimg1">
+          <div class="ptext"><span class="border">Thanks for the visiting my web
+			  !</span></div>
+        </div>
+		
+        
+        <script type="text/javascript">
+            $(window).on("scroll", function() {
+                if($(window).scrollTop()) {
+                    $('nav').addClass('black');
+                }
+                
+                else {
+                    $('nav').removeClass('black'); 
+                }
+            })
+        </script>
+		
+		
+        <button type="button" id="BackTop" class="toTop-arrow"></button>
+		
+		
+		<script>
+		$(function(){
+			$('#BackTop').click(function(){ 
+				$('html,body').animate({scrollTop:0}, 333);
+			});
+			$(window).scroll(function() {
+				if ( $(this).scrollTop() > 300 ){
+					$('#BackTop').fadeIn(222);
+				} else {
+					$('#BackTop').stop().fadeOut(222);
+				}
+			}).scroll();
+		});
+		</script>
+		
+    </body>
+</html>
+    

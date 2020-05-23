@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Goal and How to Do Better</title>
+        <link rel="stylesheet" href="css/style1.css">
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        
+    </head>
+	
+		<body>    
+		<header>
+			<nav>   
+			 <div class="menu">
+				<ul>
+					<li><a href="Goal.html">Home</a></li>
+					<li><a href="#goal">My goal</a></li>
+					<li><a href="#better">Do better</a></li>
+					<li><a href="Index.html">About Me</a></li>
+				</ul>
+			 </div>
+			</nav>
+		</header>
+		
+        <div class="pimg1">
+            <div class="ptext">
+                <span class="border">
+                    My goal and How to do better   
+                </span>
+            </div>
+        </div>
+			
+       
+       <section class="section section-light">
+		<div id="goal"><a href="goal"></a></div>
+            <h2>A Road to my goal</h2>
+            <p> Actually, I want to be a programmer after graduating from university. Why do I want to be a programmer? I noticed that work as a programmer in a company can get a very high salary. That's really attractive to become a programmer. It's only a joke~ Be true, I already like playing and using computer when I was small. I remember that once I accidentally press the F12 on the keyboard and I saw there's many difficult words and numbers on the left-hand side on my monitor. That makes me really confuse and I decided to figure out what is it. After that, I started to learn the program by myself. In secondary school, I chose the subject ICT(Information Communication Technology)and the SBA of this subject is asked me to make a website with typing programe(HTML). Because I've already studied the program by myself, it makes more easily to designing and making this website. After the DSE, I found that there is a course call Business Information Technology in SCOPE. At this moment, there's one sentence in my mind. "This is it, where I improve my programming skills". After I graduate from SCOPE, I hope I can work as a programmer and continue working with the program. </p>
+       </section>
+          
+        <div class="pimg2">
+		   <div id="better"><a href="better"></a></div>
+            <div class="ptext">
+                <span class="border trans">
+                    How TO DO BETTER
+                </span>
+            </div>
+         </div>
+        
+        <section class="section section-dark">
+          <p> Studying this course, there's two major elements, IT and Business. I think the way to improve IT and business theory is to have to read more and practice more. I can read more of the lecture notes and extracurricular books. For the program, I can download some programming editor(E.g. Dreamweaver, Brackets, eclipse) to practice programming. And I will also visit professional programmers blog or videos and learn from it. </p>
+        </section>
+           
+        <div class="pimg1">
+          <div class="ptext"><span class="border">Thanks for the visiting my web!</span>
+		  </div>
+        </div>
+		
+        <script type="text/javascript">
+            $(window).on("scroll", function() {
+                if($(window).scrollTop()) {
+                    $('nav').addClass('black');
+                }
+                
+                else {
+                    $('nav').removeClass('black'); 
+                }
+            })
+        </script>
+		
+		
+        <button type="button" id="BackTop" class="toTop-arrow"></button>
+		
+		
+		<script>
+		$(function(){
+			$('#BackTop').click(function(){ 
+				$('html,body').animate({scrollTop:0}, 333);
+			});
+			$(window).scroll(function() {
+				if ( $(this).scrollTop() > 300 ){
+					$('#BackTop').fadeIn(222);
+				} else {
+					$('#BackTop').stop().fadeOut(222);
+				}
+			}).scroll();
+		});
+		</script>
+		
+    </body>
+</html>
+    
